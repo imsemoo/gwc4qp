@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | ائتلاف المرأة العالمي</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body class="font-ar">
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><img src="images/logo2.png" alt="GWC Logo"></a>
+      <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
+      <nav class="header__nav" id="headerNav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link" data-i18n="nav_home">الرئيسية</a></li>
+          <li><a href="events.html" class="nav__link" data-i18n="nav_events">الفعاليات</a></li>
+          <li><a href="media.html" class="nav__link" data-i18n="nav_media">المركز الإعلامي</a></li>
+          <li><a href="about.html" class="nav__link" data-i18n="nav_about">عن الائتلاف</a></li>
+          <li><a href="contact.html" class="nav__link nav__link--active" data-i18n="nav_contact">تواصل معنا</a></li>
+        </ul>
+        <div class="lang-switcher">
+          <button class="lang-btn lang-btn--active" data-lang="ar">ع</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="tr">TR</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTACT HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero__title" data-i18n="contact_page_title" data-aos="fade-up">تواصل معنا</h1>
+      <p class="page-hero__desc" data-i18n="contact_page_desc" data-aos="fade-up" data-aos-delay="100">يسعدنا سماع صوتك. تواصل معنا للانضمام أو التعاون أو لمعرفة المزيد.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos="fade-right">
+          <h2 class="contact-info__title" data-i18n="contact_info_title">لنتواصل</h2>
+          <p class="contact-info__desc" data-i18n="contact_info_desc">سواء كنت ترغب في الانضمام إلى ائتلافنا أو التطوع في فعالية أو التعاون في مشروع، نحن هنا للتواصل معك.</p>
+
+          <div class="contact-info__items">
+            <div class="contact-info__item">
+              <div class="contact-info__item-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-info__item-label" data-i18n="contact_email">البريد الإلكتروني</div>
+                <div class="contact-info__item-value">info@gwc-qp.org</div>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__item-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <div class="contact-info__item-label" data-i18n="contact_phone">الهاتف</div>
+                <div class="contact-info__item-value" dir="ltr">+90 212 555 0000</div>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="contact-info__item-label" data-i18n="contact_address">العنوان</div>
+                <div class="contact-info__item-value">إسطنبول، تركيا</div>
+              </div>
+            </div>
+          </div>
+
+          <h4 style="font-weight:700; margin-bottom: var(--space-4); color: var(--color-gray-700);" data-i18n="contact_follow">تابعنا</h4>
+          <div class="contact-social">
+            <a href="#" class="contact-social__link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="contact-social__link"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="contact-social__link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="contact-social__link"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="contact-social__link"><i class="fab fa-telegram-plane"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form" data-aos="fade-left">
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="form_name">الاسم الكامل</label>
+              <input type="text" class="form-input" required data-i18n="form_name" placeholder="الاسم الكامل">
+            </div>
+            <div class="form-group">
+              <label data-i18n="form_email">البريد الإلكتروني</label>
+              <input type="email" class="form-input" required placeholder="example@email.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="form_subject">الموضوع</label>
+              <input type="text" class="form-input" data-i18n="form_subject" placeholder="الموضوع">
+            </div>
+            <div class="form-group">
+              <label data-i18n="form_interest">أنا مهتم بـ...</label>
+              <select class="form-input form-select">
+                <option value="" data-i18n="form_interest">أنا مهتم بـ...</option>
+                <option value="volunteer" data-i18n="form_interest_volunteer">التطوع</option>
+                <option value="collaborate" data-i18n="form_interest_collaborate">التعاون</option>
+                <option value="media" data-i18n="form_interest_media">استفسار إعلامي</option>
+                <option value="other" data-i18n="form_interest_other">أخرى</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="form_message">رسالتك</label>
+            <textarea class="form-textarea" required data-i18n="form_message" placeholder="رسالتك"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">
+            <i class="fas fa-paper-plane"></i>
+            <span data-i18n="form_submit">إرسال الرسالة</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP SECTION (Decorative) -->
+  <section style="background: var(--color-gray-50); padding: 0;">
+    <div style="width:100%; height:400px; background: var(--color-gray-200); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385396.3298818024!2d28.731993!3d41.005493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+        width="100%" height="400" style="border:0; filter: saturate(0.7) brightness(1.05);"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__grid">
+          <div class="footer__brand"><img src="images/logo2.png" alt="GWC" class="footer__logo"><p class="footer__desc" data-i18n="footer_desc">منصة عالمية توحد النساء.</p><div class="footer__social"><a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a><a href="#" class="footer__social-link"><i class="fab fa-x-twitter"></i></a><a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a><a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a></div></div>
+          <div><h4 class="footer__heading" data-i18n="footer_links">روابط سريعة</h4><div class="footer__links"><a href="index.html" class="footer__link" data-i18n="nav_home">الرئيسية</a><a href="events.html" class="footer__link" data-i18n="nav_events">الفعاليات</a><a href="media.html" class="footer__link" data-i18n="nav_media">المركز الإعلامي</a><a href="about.html" class="footer__link" data-i18n="nav_about">عن الائتلاف</a><a href="contact.html" class="footer__link" data-i18n="nav_contact">تواصل معنا</a></div></div>
+          <div><h4 class="footer__heading" data-i18n="footer_resources">موارد</h4><div class="footer__links"><a href="#" class="footer__link" data-i18n="footer_privacy">سياسة الخصوصية</a><a href="#" class="footer__link" data-i18n="footer_terms">شروط الاستخدام</a></div></div>
+          <div><h4 class="footer__heading" data-i18n="footer_newsletter">النشرة البريدية</h4><p class="footer__desc" data-i18n="footer_newsletter_desc">اشترك ليصلك آخر الأخبار.</p><form class="footer__newsletter-form" onsubmit="event.preventDefault()"><input type="email" class="footer__newsletter-input" placeholder="بريدك الإلكتروني"><button type="submit" class="footer__newsletter-btn" data-i18n="footer_newsletter_btn">اشتراك</button></form></div>
+        </div>
+      </div>
+      <div class="footer__bottom"><p data-i18n="footer_rights">© 2026 ائتلاف المرأة العالمي. جميع الحقوق محفوظة.</p></div>
+    </div>
+  </footer>
+
+  <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

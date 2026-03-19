@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp logo.png images/logo.png)",
+      "Bash(cp logo2.png images/logo2.png)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where npx:*)",
+      "Bash(where python:*)",
+      "Bash(node -e \"console.log\\(''ok''\\)\")"
+    ]
+  }
+}
