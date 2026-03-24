@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/video-player.css">
   <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body class="font-ar">
@@ -53,7 +54,9 @@
       <!-- Video Player -->
       <div class="mdetail-player" data-aos="fade-up">
         <div class="mdetail-player__wrapper">
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <video controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=1200&h=675&fit=crop">
+            <source src="videos/video.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -244,5 +247,6 @@
   <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/video-player.js"></script>
 </body>
 </html>

@@ -349,8 +349,11 @@ function initActiveNav() {
   });
 }
 
-/* ── Video Modal ── */
+/* ── Video Modal (fallback — skipped if video-player.js is loaded) ── */
 function initVideoModal() {
+  // Skip if unified VideoModal from video-player.js is available
+  if (window.VideoModal) return;
+
   document.addEventListener('click', (e) => {
     const trigger = e.target.closest('[data-video]');
     if (!trigger) return;

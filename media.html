@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/video-player.css">
   <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body class="font-ar">
@@ -60,7 +61,7 @@
           <span class="media-hero__meta-item"><i class="fas fa-calendar"></i> 15 مارس 2026</span>
         </div>
         <div class="media-hero__actions">
-          <button class="btn btn--gold btn--lg media-hero__play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <button class="btn btn--gold btn--lg media-hero__play-btn" data-video="videos/video.mp4">
             <i class="fas fa-play"></i>
             <span>شاهد الآن</span>
           </button>
@@ -73,7 +74,7 @@
     </div>
 
     <!-- Large play circle overlay -->
-    <button class="media-hero__play-circle" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" aria-label="Play video" data-aos="zoom-in" data-aos-delay="200">
+    <button class="media-hero__play-circle" data-video="videos/real-1.mp4" aria-label="Play video" data-aos="zoom-in" data-aos-delay="200">
       <div class="media-hero__play-ring"></div>
       <i class="fas fa-play"></i>
     </button>
@@ -111,7 +112,7 @@
       <!-- Featured video (large) + 2 secondary -->
       <div class="media-featured-layout" data-aos="fade-up">
         <!-- Main featured -->
-        <div class="vid-card vid-card--featured" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+        <div class="vid-card vid-card--featured" data-video="videos/real-2.mp4">
           <div class="vid-card__thumb">
             <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&h=550&fit=crop" alt="">
             <div class="vid-card__gradient"></div>
@@ -129,7 +130,7 @@
         </div>
 
         <!-- Secondary stack -->
-        <div class="vid-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+        <div class="vid-card" data-video="videos/video.mp4">
           <div class="vid-card__thumb">
             <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=340&fit=crop" alt="">
             <div class="vid-card__gradient"></div>
@@ -146,7 +147,7 @@
           </div>
         </div>
 
-        <div class="vid-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+        <div class="vid-card" data-video="videos/real-1.mp4">
           <div class="vid-card__thumb">
             <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&h=340&fit=crop" alt="">
             <div class="vid-card__gradient"></div>
@@ -166,7 +167,7 @@
 
       <!-- More videos row -->
       <div class="vid-more-row" data-aos="fade-up">
-        <div class="vid-card vid-card--compact" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+        <div class="vid-card vid-card--compact" data-video="videos/real-2.mp4">
           <div class="vid-card__thumb">
             <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=500&h=300&fit=crop" alt="">
             <div class="vid-card__gradient"></div>
@@ -178,7 +179,7 @@
             <div class="vid-card__meta"><span><i class="fas fa-eye"></i> 7,200</span></div>
           </div>
         </div>
-        <div class="vid-card vid-card--compact" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+        <div class="vid-card vid-card--compact" data-video="videos/video.mp4">
           <div class="vid-card__thumb">
             <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=500&h=300&fit=crop" alt="">
             <div class="vid-card__gradient"></div>
@@ -190,7 +191,7 @@
             <div class="vid-card__meta"><span><i class="fas fa-eye"></i> 15,600</span></div>
           </div>
         </div>
-        <div class="vid-card vid-card--compact" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+        <div class="vid-card vid-card--compact" data-video="videos/real-1.mp4">
           <div class="vid-card__thumb">
             <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=500&h=300&fit=crop" alt="">
             <div class="vid-card__gradient"></div>
@@ -202,7 +203,7 @@
             <div class="vid-card__meta"><span><i class="fas fa-eye"></i> 6,800</span></div>
           </div>
         </div>
-        <div class="vid-card vid-card--compact" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+        <div class="vid-card vid-card--compact" data-video="videos/real-2.mp4">
           <div class="vid-card__thumb">
             <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=500&h=300&fit=crop" alt="">
             <div class="vid-card__gradient"></div>
@@ -232,7 +233,7 @@
     <div class="swiper reels-swiper" data-aos="fade-up">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="reel-card" data-reel="videos/real-1.mp4" data-reel-group="media-reels" data-reel-type="local">
             <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=700&fit=crop" alt="">
             <div class="reel-card__gradient"></div>
             <div class="reel-card__play"><i class="fas fa-play"></i></div>
@@ -244,7 +245,7 @@
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="reel-card" data-reel="videos/real-2.mp4" data-reel-group="media-reels" data-reel-type="local">
             <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&h=700&fit=crop" alt="">
             <div class="reel-card__gradient"></div>
             <div class="reel-card__play"><i class="fas fa-play"></i></div>
@@ -256,7 +257,7 @@
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="reel-card" data-reel="videos/real-1.mp4" data-reel-group="media-reels" data-reel-type="local">
             <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=700&fit=crop" alt="">
             <div class="reel-card__gradient"></div>
             <div class="reel-card__play"><i class="fas fa-play"></i></div>
@@ -268,7 +269,7 @@
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="reel-card" data-reel="videos/real-2.mp4" data-reel-group="media-reels" data-reel-type="local">
             <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&h=700&fit=crop" alt="">
             <div class="reel-card__gradient"></div>
             <div class="reel-card__play"><i class="fas fa-play"></i></div>
@@ -280,7 +281,7 @@
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="reel-card" data-reel="videos/real-1.mp4" data-reel-group="media-reels" data-reel-type="local">
             <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=700&fit=crop" alt="">
             <div class="reel-card__gradient"></div>
             <div class="reel-card__play"><i class="fas fa-play"></i></div>
@@ -292,7 +293,7 @@
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="reel-card" data-reel="videos/real-2.mp4" data-reel-group="media-reels" data-reel-type="local">
             <img src="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=400&h=700&fit=crop" alt="">
             <div class="reel-card__gradient"></div>
             <div class="reel-card__play"><i class="fas fa-play"></i></div>
@@ -435,5 +436,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/video-player.js"></script>
 </body>
 </html>

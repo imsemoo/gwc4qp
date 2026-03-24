@@ -1,0 +1,561 @@
+/* ============================================
+   GWC — Video System CSS v1.0
+   Modal Player + Custom Controls + Reels Viewer
+   ============================================ */
+
+/* ══════════════════════════════════════════════
+   1. VIDEO MODAL — Unified (YouTube + Local)
+   ══════════════════════════════════════════════ */
+
+.vmodal {
+  position: fixed;
+  inset: 0;
+  z-index: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(6, 13, 20, 0);
+  backdrop-filter: blur(0);
+  transition: background .3s ease, backdrop-filter .3s ease;
+}
+
+.vmodal--open {
+  background: rgba(6, 13, 20, .92);
+  backdrop-filter: blur(10px);
+}
+
+.vmodal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .1);
+  cursor: pointer;
+  transition: background .2s;
+  z-index: 10;
+}
+
+.vmodal__close:hover {
+  background: rgba(255, 255, 255, .15);
+}
+
+.vmodal__container {
+  width: min(90vw, 960px);
+  opacity: 0;
+  transform: scale(.95);
+  transition: opacity .3s ease, transform .3s ease;
+}
+
+.vmodal--open .vmodal__container {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Player wrapper — 16:9 responsive */
+.vmodal__player-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .4);
+}
+
+.vmodal__player-wrap iframe,
+.vmodal__player-wrap video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+/* ══════════════════════════════════════════════
+   2. CUSTOM VIDEO PLAYER CONTROLS
+   ══════════════════════════════════════════════ */
+
+.vplayer__video {
+  background: #000;
+  cursor: pointer;
+}
+
+/* Overlay big play */
+.vplayer__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .25);
+  transition: opacity .3s;
+  z-index: 3;
+}
+
+.vplayer__overlay--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.vplayer__big-play {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, .15);
+  border: 2px solid rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: transform .3s cubic-bezier(.34, 1.56, .64, 1), background .2s;
+}
+
+.vplayer__big-play i {
+  margin-inline-start: 4px;
+}
+
+.vplayer__big-play:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, .25);
+}
+
+/* Controls bar */
+.vplayer__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, .7));
+  z-index: 5;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity .25s, transform .25s;
+}
+
+.vmodal__player-wrap:hover .vplayer__controls {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vplayer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  font-size: .9rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background .2s;
+  flex-shrink: 0;
+}
+
+.vplayer__btn:hover {
+  background: rgba(255, 255, 255, .15);
+}
+
+/* Progress bar */
+.vplayer__progress {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.vplayer__progress:hover {
+  height: 6px;
+}
+
+.vplayer__progress-filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--gold, #D4A44C);
+  border-radius: 4px;
+  transition: width .1s linear;
+}
+
+[dir="rtl"] .vplayer__progress-filled {
+  left: auto;
+  right: 0;
+}
+
+.vplayer__time {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, .7);
+  min-width: 40px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* ══════════════════════════════════════════════
+   3. IMMERSIVE REELS VIEWER
+   TikTok / Instagram Reels Style
+   ══════════════════════════════════════════════ */
+
+.reels-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 700;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .3s;
+  overflow: hidden;
+}
+
+.reels-viewer--open {
+  background: #000;
+}
+
+/* Close button */
+.reels-viewer__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .1);
+  cursor: pointer;
+  z-index: 20;
+  transition: background .2s;
+}
+
+.reels-viewer__close:hover {
+  background: rgba(255, 255, 255, .18);
+}
+
+/* Mute toggle */
+.reels-viewer__mute {
+  position: absolute;
+  top: 20px;
+  right: 76px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .1);
+  cursor: pointer;
+  z-index: 20;
+  transition: background .2s;
+}
+
+.reels-viewer__mute:hover {
+  background: rgba(255, 255, 255, .18);
+}
+
+/* Navigation arrows */
+.reels-viewer__nav {
+  position: absolute;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .08);
+  cursor: pointer;
+  z-index: 20;
+  transition: background .2s, opacity .2s;
+}
+
+.reels-viewer__nav:hover {
+  background: rgba(255, 255, 255, .15);
+}
+
+.reels-viewer__nav--up {
+  bottom: calc(50% + 30px);
+}
+
+.reels-viewer__nav--down {
+  top: calc(50% + 30px);
+}
+
+/* Counter */
+.reels-viewer__counter {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, .4);
+  font-size: 13px;
+  font-weight: 600;
+  z-index: 20;
+  letter-spacing: 1px;
+}
+
+/* Track — vertical scroll container */
+.reels-viewer__track {
+  width: min(380px, 90vw);
+  height: 100vh;
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+  transition: transform .4s cubic-bezier(.16, 1, .3, 1);
+}
+
+/* Each slide */
+.reels-viewer__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #111;
+}
+
+.reels-viewer__slide:nth-child(1) { top: 0; }
+.reels-viewer__slide:nth-child(2) { top: 100%; }
+.reels-viewer__slide:nth-child(3) { top: 200%; }
+.reels-viewer__slide:nth-child(4) { top: 300%; }
+.reels-viewer__slide:nth-child(5) { top: 400%; }
+.reels-viewer__slide:nth-child(6) { top: 500%; }
+.reels-viewer__slide:nth-child(7) { top: 600%; }
+.reels-viewer__slide:nth-child(8) { top: 700%; }
+.reels-viewer__slide:nth-child(9) { top: 800%; }
+.reels-viewer__slide:nth-child(10) { top: 900%; }
+
+/* Dynamic positioning via nth-child for any number */
+.reels-viewer__slide {
+  top: calc(var(--slide-index, 0) * 100%);
+}
+
+/* Media container */
+.reels-viewer__media {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reels-viewer__poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px) brightness(.5);
+}
+
+.reels-viewer__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Loading spinner */
+.reels-viewer__loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.reels-viewer__spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid rgba(255, 255, 255, .15);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: reels-spin .7s linear infinite;
+}
+
+@keyframes reels-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Play/pause overlay */
+.reels-viewer__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.reels-viewer__play-toggle {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .3);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  backdrop-filter: blur(4px);
+  transition: opacity .25s, transform .25s;
+}
+
+.reels-viewer__play-toggle i {
+  margin-inline-start: 4px;
+}
+
+.reels-viewer__overlay--playing .reels-viewer__play-toggle {
+  opacity: 0;
+  transform: scale(.8);
+  pointer-events: none;
+}
+
+/* Bottom info overlay */
+.reels-viewer__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 60px 20px 24px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, .65));
+  z-index: 6;
+  pointer-events: none;
+}
+
+.reels-viewer__tag {
+  display: inline-block;
+  padding: 3px 10px;
+  background: rgba(212, 164, 76, .85);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.reels-viewer__title {
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .3);
+}
+
+.reels-viewer__views {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, .5);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Progress bar (bottom of each reel) */
+.reels-viewer__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, .1);
+  z-index: 10;
+}
+
+.reels-viewer__progress-bar {
+  height: 100%;
+  background: var(--gold, #D4A44C);
+  border-radius: 0 3px 3px 0;
+  width: 0%;
+  transition: width .1s linear;
+}
+
+[dir="rtl"] .reels-viewer__progress-bar {
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* ══════════════════════════════════════════════
+   4. RESPONSIVE
+   ══════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .vmodal__container {
+    width: 95vw;
+  }
+
+  .vmodal__close {
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .reels-viewer__track {
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  .reels-viewer__slide {
+    border-radius: 0;
+  }
+
+  .reels-viewer__nav {
+    display: none;
+  }
+
+  .reels-viewer__close,
+  .reels-viewer__mute {
+    top: 12px;
+  }
+
+  .reels-viewer__close {
+    right: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .reels-viewer__mute {
+    right: 60px;
+    width: 40px;
+    height: 40px;
+  }
+}
