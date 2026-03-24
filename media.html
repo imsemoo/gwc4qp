@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/logo.png" type="image/png">
 </head>
@@ -227,72 +228,79 @@
       </div>
     </div>
 
-    <!-- Full-bleed horizontal scroll — no container restriction -->
-    <div class="reels-carousel" data-aos="fade-up">
-      <div class="reels-carousel__track">
-        <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
-          <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=700&fit=crop" alt="">
-          <div class="reel-card__gradient"></div>
-          <div class="reel-card__play"><i class="fas fa-play"></i></div>
-          <div class="reel-card__content">
-            <span class="reel-card__tag">مؤتمر</span>
-            <span class="reel-card__title">لحظات مؤثرة من المؤتمر</span>
-            <span class="reel-card__views"><i class="fas fa-play-circle"></i> 45K مشاهدة</span>
+    <!-- Swiper Reels Slider -->
+    <div class="swiper reels-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=700&fit=crop" alt="">
+            <div class="reel-card__gradient"></div>
+            <div class="reel-card__play"><i class="fas fa-play"></i></div>
+            <div class="reel-card__content">
+              <span class="reel-card__tag">مؤتمر</span>
+              <span class="reel-card__title">لحظات مؤثرة من المؤتمر</span>
+              <span class="reel-card__views"><i class="fas fa-play-circle"></i> 45K مشاهدة</span>
+            </div>
           </div>
         </div>
-
-        <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
-          <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&h=700&fit=crop" alt="">
-          <div class="reel-card__gradient"></div>
-          <div class="reel-card__play"><i class="fas fa-play"></i></div>
-          <div class="reel-card__content">
-            <span class="reel-card__tag">تضامن</span>
-            <span class="reel-card__title">أصوات النساء من حول العالم</span>
-            <span class="reel-card__views"><i class="fas fa-play-circle"></i> 32K مشاهدة</span>
+        <div class="swiper-slide">
+          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&h=700&fit=crop" alt="">
+            <div class="reel-card__gradient"></div>
+            <div class="reel-card__play"><i class="fas fa-play"></i></div>
+            <div class="reel-card__content">
+              <span class="reel-card__tag">تضامن</span>
+              <span class="reel-card__title">أصوات النساء من حول العالم</span>
+              <span class="reel-card__views"><i class="fas fa-play-circle"></i> 32K مشاهدة</span>
+            </div>
           </div>
         </div>
-
-        <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
-          <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=700&fit=crop" alt="">
-          <div class="reel-card__gradient"></div>
-          <div class="reel-card__play"><i class="fas fa-play"></i></div>
-          <div class="reel-card__content">
-            <span class="reel-card__tag">كواليس</span>
-            <span class="reel-card__title">خلف الكواليس — التحضيرات</span>
-            <span class="reel-card__views"><i class="fas fa-play-circle"></i> 28K مشاهدة</span>
+        <div class="swiper-slide">
+          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=700&fit=crop" alt="">
+            <div class="reel-card__gradient"></div>
+            <div class="reel-card__play"><i class="fas fa-play"></i></div>
+            <div class="reel-card__content">
+              <span class="reel-card__tag">كواليس</span>
+              <span class="reel-card__title">خلف الكواليس — التحضيرات</span>
+              <span class="reel-card__views"><i class="fas fa-play-circle"></i> 28K مشاهدة</span>
+            </div>
           </div>
         </div>
-
-        <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
-          <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&h=700&fit=crop" alt="">
-          <div class="reel-card__gradient"></div>
-          <div class="reel-card__play"><i class="fas fa-play"></i></div>
-          <div class="reel-card__content">
-            <span class="reel-card__tag">رسائل</span>
-            <span class="reel-card__title">رسائل تضامنية من نساء العالم</span>
-            <span class="reel-card__views"><i class="fas fa-play-circle"></i> 21K مشاهدة</span>
+        <div class="swiper-slide">
+          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&h=700&fit=crop" alt="">
+            <div class="reel-card__gradient"></div>
+            <div class="reel-card__play"><i class="fas fa-play"></i></div>
+            <div class="reel-card__content">
+              <span class="reel-card__tag">رسائل</span>
+              <span class="reel-card__title">رسائل تضامنية من نساء العالم</span>
+              <span class="reel-card__views"><i class="fas fa-play-circle"></i> 21K مشاهدة</span>
+            </div>
           </div>
         </div>
-
-        <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
-          <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=700&fit=crop" alt="">
-          <div class="reel-card__gradient"></div>
-          <div class="reel-card__play"><i class="fas fa-play"></i></div>
-          <div class="reel-card__content">
-            <span class="reel-card__tag">القدس</span>
-            <span class="reel-card__title">يوم القدس العالمي</span>
-            <span class="reel-card__views"><i class="fas fa-play-circle"></i> 55K مشاهدة</span>
+        <div class="swiper-slide">
+          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=700&fit=crop" alt="">
+            <div class="reel-card__gradient"></div>
+            <div class="reel-card__play"><i class="fas fa-play"></i></div>
+            <div class="reel-card__content">
+              <span class="reel-card__tag">القدس</span>
+              <span class="reel-card__title">يوم القدس العالمي</span>
+              <span class="reel-card__views"><i class="fas fa-play-circle"></i> 55K مشاهدة</span>
+            </div>
           </div>
         </div>
-
-        <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
-          <img src="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=400&h=700&fit=crop" alt="">
-          <div class="reel-card__gradient"></div>
-          <div class="reel-card__play"><i class="fas fa-play"></i></div>
-          <div class="reel-card__content">
-            <span class="reel-card__tag">معرض</span>
-            <span class="reel-card__title">جولة في المعرض الدولي</span>
-            <span class="reel-card__views"><i class="fas fa-play-circle"></i> 18K مشاهدة</span>
+        <div class="swiper-slide">
+          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <img src="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=400&h=700&fit=crop" alt="">
+            <div class="reel-card__gradient"></div>
+            <div class="reel-card__play"><i class="fas fa-play"></i></div>
+            <div class="reel-card__content">
+              <span class="reel-card__tag">معرض</span>
+              <span class="reel-card__title">جولة في المعرض الدولي</span>
+              <span class="reel-card__views"><i class="fas fa-play-circle"></i> 18K مشاهدة</span>
+            </div>
           </div>
         </div>
       </div>
@@ -424,6 +432,7 @@
 
   <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>

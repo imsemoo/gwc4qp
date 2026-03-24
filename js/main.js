@@ -380,6 +380,27 @@ function initVideoModal() {
   });
 }
 
+/* ── Swiper Reels Slider ── */
+function initReelsSwiper() {
+  const reelsSwipers = document.querySelectorAll('.reels-swiper');
+  if (!reelsSwipers.length || typeof Swiper === 'undefined') return;
+
+  reelsSwipers.forEach(el => {
+    new Swiper(el, {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      freeMode: true,
+      grabCursor: true,
+      speed: 500,
+      breakpoints: {
+        480:  { spaceBetween: 16 },
+        768:  { spaceBetween: 18 },
+        1024: { spaceBetween: 20 },
+      },
+    });
+  });
+}
+
 /* ── Initialize ── */
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
@@ -397,6 +418,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initEventsFilter();
   initContactForm();
   initVideoModal();
+  initReelsSwiper();
 
   if (window.i18n) window.i18n.init();
 });

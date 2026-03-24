@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معرض الصور | ائتلاف المرأة العالمي</title>
+  <meta name="description" content="استكشف أرشيفنا المصور من فعاليات ومؤتمرات ومعارض الائتلاف حول العالم.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body class="font-ar">
+
+  <!-- ════════ HEADER ════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="images/logo-white.png" alt="ائتلاف المرأة العالمي" class="header__logo-white">
+        <img src="images/logo2.png" alt="ائتلاف المرأة العالمي" class="header__logo-dark">
+      </a>
+      <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
+      <nav class="header__nav" id="headerNav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link" data-i18n="nav_home">الرئيسية</a></li>
+          <li><a href="events.html" class="nav__link" data-i18n="nav_events">الفعاليات</a></li>
+          <li><a href="media.html" class="nav__link" data-i18n="nav_media">المركز الإعلامي</a></li>
+          <li><a href="about.html" class="nav__link" data-i18n="nav_about">عن الائتلاف</a></li>
+          <li><a href="contact.html" class="nav__link" data-i18n="nav_contact">تواصل معنا</a></li>
+        </ul>
+        <div class="lang-switcher">
+          <button class="lang-btn lang-btn--active" data-lang="ar">ع</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="tr">TR</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ════════ PAGE HERO ════════ -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero__title" data-aos="fade-up">معرض الصور</h1>
+      <p class="page-hero__desc" data-aos="fade-up" data-aos-delay="100">أرشيف مصور يوثق أبرز لحظاتنا حول العالم.</p>
+    </div>
+  </section>
+
+  <!-- ════════ FILTERS ════════ -->
+  <section class="events-filters-wrap">
+    <div class="container">
+      <div class="filters-bar" data-aos="fade-up">
+        <div class="filter-search">
+          <label>ابحث في الصور...</label>
+          <i class="fas fa-search"></i>
+          <input type="text" class="filter-search__input" placeholder="ابحث في الصور...">
+        </div>
+        <div class="filter-group">
+          <label>الفعالية</label>
+          <select class="filter-select" data-filter="event">
+            <option value="all">الكل</option>
+            <option value="conference-3">المؤتمر الثالث</option>
+            <option value="quds-exhibition">معرض القدس</option>
+            <option value="solidarity-campaign">حملة التضامن</option>
+            <option value="conference-2">المؤتمر الثاني</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>الدولة</label>
+          <select class="filter-select" data-filter="country">
+            <option value="all">الكل</option>
+            <option value="turkey">تركيا</option>
+            <option value="malaysia">ماليزيا</option>
+            <option value="uk">المملكة المتحدة</option>
+            <option value="morocco">المغرب</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ GALLERY GRID ════════ -->
+  <section class="section media-photos-section">
+    <div class="container">
+      <div class="masonry-grid" data-aos="fade-up">
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200" data-lightbox-group="gallery" data-caption="المؤتمر الدولي الثالث — إسطنبول">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop" alt="المؤتمر الدولي الثالث — إسطنبول">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200" data-lightbox-group="gallery" data-caption="جلسات حوارية نسائية">
+          <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&h=500&fit=crop" alt="جلسات حوارية نسائية">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1200" data-lightbox-group="gallery" data-caption="لحظات من المعرض">
+          <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&h=350&fit=crop" alt="لحظات من المعرض">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200" data-lightbox-group="gallery" data-caption="ورشة عمل تفاعلية">
+          <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=400&fit=crop" alt="ورشة عمل تفاعلية">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200" data-lightbox-group="gallery" data-caption="حملة التضامن العالمية">
+          <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=320&fit=crop" alt="حملة التضامن العالمية">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200" data-lightbox-group="gallery" data-caption="مسيرة نسائية عالمية">
+          <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=450&fit=crop" alt="مسيرة نسائية عالمية">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1560439514-4e9645039924?w=1200" data-lightbox-group="gallery" data-caption="معرض فني دولي">
+          <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&h=380&fit=crop" alt="معرض فني دولي">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=1200" data-lightbox-group="gallery" data-caption="توثيق إعلامي">
+          <img src="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=400&h=300&fit=crop" alt="توثيق إعلامي">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1200" data-lightbox-group="gallery" data-caption="مشاركات نسائية فاعلة">
+          <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&h=420&fit=crop" alt="مشاركات نسائية فاعلة">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200" data-lightbox-group="gallery" data-caption="افتتاح المؤتمر الدولي">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=360&fit=crop" alt="افتتاح المؤتمر الدولي">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ FOOTER ════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <img src="images/logo-white.png" alt="GWC" class="footer__logo">
+            <p class="footer__desc">منصة عالمية توحد النساء من أجل العدالة والسلام، توثق وتوصل الأصوات من أجل القدس وفلسطين.</p>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="footer__social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="footer__social-link" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading">روابط سريعة</h4>
+            <div class="footer__links">
+              <a href="index.html" class="footer__link">الرئيسية</a>
+              <a href="events.html" class="footer__link">الفعاليات</a>
+              <a href="media.html" class="footer__link">المركز الإعلامي</a>
+              <a href="about.html" class="footer__link">عن الائتلاف</a>
+              <a href="contact.html" class="footer__link">تواصل معنا</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading">موارد</h4>
+            <div class="footer__links">
+              <a href="privacy.html" class="footer__link">سياسة الخصوصية</a>
+              <a href="terms.html" class="footer__link">شروط الاستخدام</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading">النشرة البريدية</h4>
+            <p class="footer__desc">اشترك ليصلك آخر أخبار الفعاليات والمبادرات.</p>
+            <form class="footer__newsletter-form" onsubmit="event.preventDefault()">
+              <input type="email" class="footer__newsletter-input" placeholder="بريدك الإلكتروني">
+              <button type="submit" class="footer__newsletter-btn">اشتراك</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 ائتلاف المرأة العالمي لنصرة القدس وفلسطين. جميع الحقوق محفوظة.</p>
+        <div class="footer__bottom-links">
+          <a href="privacy.html">سياسة الخصوصية</a>
+          <a href="terms.html">شروط الاستخدام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
