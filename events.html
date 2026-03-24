@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>الفعاليات | ائتلاف المرأة العالمي</title>
-  <meta name="description" content="Browse our comprehensive archive of events across the globe.">
+  <meta name="description" content="تصفح أرشيفنا الشامل للفعاليات — مؤتمرات، معارض، حملات، وندوات من جميع أنحاء العالم.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body class="font-ar">
 
-  <!-- HEADER -->
+  <!-- ════════ HEADER ════════ -->
   <header class="header" id="header">
     <div class="header__inner">
-      <a href="index.html" class="header__logo"><img src="images/logo2.png" alt="GWC Logo"></a>
+      <a href="index.html" class="header__logo">
+        <img src="images/logo-white.png" alt="ائتلاف المرأة العالمي" class="header__logo-white">
+        <img src="images/logo2.png" alt="ائتلاف المرأة العالمي" class="header__logo-dark">
+      </a>
       <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
       <nav class="header__nav" id="headerNav">
         <ul class="nav__list">
@@ -33,7 +38,7 @@
     </div>
   </header>
 
-  <!-- EVENTS HERO -->
+  <!-- ════════ EVENTS HERO ════════ -->
   <section class="page-hero">
     <div class="container">
       <h1 class="page-hero__title" data-i18n="events_page_title" data-aos="fade-up">جميع الفعاليات</h1>
@@ -41,8 +46,8 @@
     </div>
   </section>
 
-  <!-- FILTERS -->
-  <section style="padding-bottom: var(--space-12);">
+  <!-- ════════ FILTERS ════════ -->
+  <section class="events-filters-wrap">
     <div class="container">
       <div class="filters-bar" data-aos="fade-up">
         <div class="filter-search">
@@ -87,184 +92,180 @@
     </div>
   </section>
 
-  <!-- EVENTS GRID -->
-  <section class="section" style="padding-top:0;">
+  <!-- ════════ EVENTS GRID ════════ -->
+  <section class="section events-listing-section">
     <div class="container">
-      <div class="events-grid">
+      <div class="ev-grid">
 
-        <div class="event-story" data-country="turkey" data-year="2026" data-type="conference" data-aos="fade-up">
-          <div class="event-story__image">
-            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop" alt="">
-            <div class="event-story__date-badge"><span class="day">15</span><span class="month">MAR</span></div>
-            <span class="event-story__type" data-i18n="event_conference">مؤتمر</span>
-          </div>
-          <div class="event-story__body">
-            <h3 class="event-story__title"><a href="event-detail.html">المؤتمر الدولي الثالث لنصرة القدس</a></h3>
-            <div class="event-story__meta">
-              <div class="event-story__meta-item"><i class="fas fa-map-marker-alt"></i><span>إسطنبول، تركيا</span></div>
-              <div class="event-story__meta-item"><i class="fas fa-users"></i><span>2,500+ مشاركة</span></div>
+        <!-- FEATURED: full-width card -->
+        <div class="ev-card ev-card--featured" data-country="turkey" data-year="2026" data-type="conference" data-aos="fade-up">
+          <a href="event-detail.html" class="ev-card__inner">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=600&fit=crop" alt="المؤتمر الدولي الثالث">
+            <div class="ev-card__gradient"></div>
+            <div class="ev-card__date"><span class="ev-card__date-day">15</span><span class="ev-card__date-month">MAR</span></div>
+            <span class="ev-card__tag">مؤتمر</span>
+            <div class="ev-card__content">
+              <h3 class="ev-card__title">المؤتمر الدولي الثالث لنصرة القدس وفلسطين</h3>
+              <div class="ev-card__meta">
+                <span class="ev-card__meta-item"><i class="fas fa-map-marker-alt"></i> إسطنبول، تركيا</span>
+                <span class="ev-card__meta-item"><i class="fas fa-users"></i> 2,500+ مشاركة</span>
+                <span class="ev-card__meta-item"><i class="fas fa-images"></i> 120 صورة</span>
+              </div>
+              <span class="ev-card__cta">عرض التفاصيل <i class="fas fa-arrow-left"></i></span>
             </div>
-            <div class="event-story__footer">
-              <span class="event-story__gallery-count"><i class="fas fa-images"></i> 120 <span data-i18n="event_photos">صورة</span></span>
-              <a href="event-detail.html" class="event-story__link"><span data-i18n="event_view">عرض التفاصيل</span> <i class="fas fa-arrow-left"></i></a>
-            </div>
-          </div>
+          </a>
         </div>
 
-        <div class="event-story" data-country="malaysia" data-year="2026" data-type="exhibition" data-aos="fade-up" data-aos-delay="100">
-          <div class="event-story__image">
-            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=400&fit=crop" alt="">
-            <div class="event-story__date-badge"><span class="day">22</span><span class="month">JAN</span></div>
-            <span class="event-story__type" data-i18n="event_exhibition">معرض</span>
-          </div>
-          <div class="event-story__body">
-            <h3 class="event-story__title"><a href="event-detail.html">معرض القدس في عيون النساء</a></h3>
-            <div class="event-story__meta">
-              <div class="event-story__meta-item"><i class="fas fa-map-marker-alt"></i><span>كوالالمبور، ماليزيا</span></div>
-              <div class="event-story__meta-item"><i class="fas fa-users"></i><span>1,800+ مشاركة</span></div>
+        <!-- Standard cards -->
+        <div class="ev-card" data-country="malaysia" data-year="2026" data-type="exhibition" data-aos="fade-up" data-aos-delay="100">
+          <a href="event-detail.html" class="ev-card__inner">
+            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=700&h=500&fit=crop" alt="معرض القدس في عيون النساء">
+            <div class="ev-card__gradient"></div>
+            <div class="ev-card__date"><span class="ev-card__date-day">22</span><span class="ev-card__date-month">JAN</span></div>
+            <span class="ev-card__tag">معرض</span>
+            <div class="ev-card__content">
+              <h3 class="ev-card__title">معرض القدس في عيون النساء</h3>
+              <div class="ev-card__meta">
+                <span class="ev-card__meta-item"><i class="fas fa-map-marker-alt"></i> كوالالمبور، ماليزيا</span>
+                <span class="ev-card__meta-item"><i class="fas fa-users"></i> 1,800+ مشاركة</span>
+              </div>
+              <span class="ev-card__cta">عرض التفاصيل <i class="fas fa-arrow-left"></i></span>
             </div>
-            <div class="event-story__footer">
-              <span class="event-story__gallery-count"><i class="fas fa-images"></i> 95 <span data-i18n="event_photos">صورة</span></span>
-              <a href="event-detail.html" class="event-story__link"><span data-i18n="event_view">عرض التفاصيل</span> <i class="fas fa-arrow-left"></i></a>
-            </div>
-          </div>
+          </a>
         </div>
 
-        <div class="event-story" data-country="uk" data-year="2025" data-type="campaign" data-aos="fade-up" data-aos-delay="200">
-          <div class="event-story__image">
-            <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=600&h=400&fit=crop" alt="">
-            <div class="event-story__date-badge"><span class="day">08</span><span class="month">DEC</span></div>
-            <span class="event-story__type" data-i18n="event_campaign">حملة</span>
-          </div>
-          <div class="event-story__body">
-            <h3 class="event-story__title"><a href="event-detail.html">حملة النساء العالمية من أجل فلسطين</a></h3>
-            <div class="event-story__meta">
-              <div class="event-story__meta-item"><i class="fas fa-map-marker-alt"></i><span>لندن، المملكة المتحدة</span></div>
-              <div class="event-story__meta-item"><i class="fas fa-users"></i><span>3,200+ مشاركة</span></div>
+        <div class="ev-card" data-country="uk" data-year="2025" data-type="campaign" data-aos="fade-up" data-aos-delay="200">
+          <a href="event-detail.html" class="ev-card__inner">
+            <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=700&h=500&fit=crop" alt="حملة النساء العالمية">
+            <div class="ev-card__gradient"></div>
+            <div class="ev-card__date"><span class="ev-card__date-day">08</span><span class="ev-card__date-month">DEC</span></div>
+            <span class="ev-card__tag">حملة</span>
+            <div class="ev-card__content">
+              <h3 class="ev-card__title">حملة النساء العالمية من أجل فلسطين</h3>
+              <div class="ev-card__meta">
+                <span class="ev-card__meta-item"><i class="fas fa-map-marker-alt"></i> لندن، المملكة المتحدة</span>
+                <span class="ev-card__meta-item"><i class="fas fa-users"></i> 3,200+ مشاركة</span>
+              </div>
+              <span class="ev-card__cta">عرض التفاصيل <i class="fas fa-arrow-left"></i></span>
             </div>
-            <div class="event-story__footer">
-              <span class="event-story__gallery-count"><i class="fas fa-images"></i> 200 <span data-i18n="event_photos">صورة</span></span>
-              <a href="event-detail.html" class="event-story__link"><span data-i18n="event_view">عرض التفاصيل</span> <i class="fas fa-arrow-left"></i></a>
-            </div>
-          </div>
+          </a>
         </div>
 
-        <div class="event-story" data-country="jordan" data-year="2025" data-type="seminar" data-aos="fade-up">
-          <div class="event-story__image">
-            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&h=400&fit=crop" alt="">
-            <div class="event-story__date-badge"><span class="day">18</span><span class="month">OCT</span></div>
-            <span class="event-story__type" data-i18n="event_seminar">ندوة</span>
-          </div>
-          <div class="event-story__body">
-            <h3 class="event-story__title"><a href="event-detail.html">ندوة دور المرأة في التضامن الدولي</a></h3>
-            <div class="event-story__meta">
-              <div class="event-story__meta-item"><i class="fas fa-map-marker-alt"></i><span>عمّان، الأردن</span></div>
-              <div class="event-story__meta-item"><i class="fas fa-users"></i><span>800+ مشاركة</span></div>
+        <div class="ev-card" data-country="jordan" data-year="2025" data-type="seminar" data-aos="fade-up">
+          <a href="event-detail.html" class="ev-card__inner">
+            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=700&h=500&fit=crop" alt="ندوة دور المرأة">
+            <div class="ev-card__gradient"></div>
+            <div class="ev-card__date"><span class="ev-card__date-day">18</span><span class="ev-card__date-month">OCT</span></div>
+            <span class="ev-card__tag">ندوة</span>
+            <div class="ev-card__content">
+              <h3 class="ev-card__title">ندوة دور المرأة في التضامن الدولي</h3>
+              <div class="ev-card__meta">
+                <span class="ev-card__meta-item"><i class="fas fa-map-marker-alt"></i> عمّان، الأردن</span>
+                <span class="ev-card__meta-item"><i class="fas fa-users"></i> 800+ مشاركة</span>
+              </div>
+              <span class="ev-card__cta">عرض التفاصيل <i class="fas fa-arrow-left"></i></span>
             </div>
-            <div class="event-story__footer">
-              <span class="event-story__gallery-count"><i class="fas fa-images"></i> 60 <span data-i18n="event_photos">صورة</span></span>
-              <a href="event-detail.html" class="event-story__link"><span data-i18n="event_view">عرض التفاصيل</span> <i class="fas fa-arrow-left"></i></a>
-            </div>
-          </div>
+          </a>
         </div>
 
-        <div class="event-story" data-country="morocco" data-year="2025" data-type="conference" data-aos="fade-up" data-aos-delay="100">
-          <div class="event-story__image">
-            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&h=400&fit=crop" alt="">
-            <div class="event-story__date-badge"><span class="day">05</span><span class="month">SEP</span></div>
-            <span class="event-story__type" data-i18n="event_conference">مؤتمر</span>
-          </div>
-          <div class="event-story__body">
-            <h3 class="event-story__title"><a href="event-detail.html">المؤتمر الدولي الثاني لنصرة فلسطين</a></h3>
-            <div class="event-story__meta">
-              <div class="event-story__meta-item"><i class="fas fa-map-marker-alt"></i><span>الرباط، المغرب</span></div>
-              <div class="event-story__meta-item"><i class="fas fa-users"></i><span>2,100+ مشاركة</span></div>
+        <div class="ev-card" data-country="morocco" data-year="2025" data-type="conference" data-aos="fade-up" data-aos-delay="100">
+          <a href="event-detail.html" class="ev-card__inner">
+            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=700&h=500&fit=crop" alt="المؤتمر الدولي الثاني">
+            <div class="ev-card__gradient"></div>
+            <div class="ev-card__date"><span class="ev-card__date-day">05</span><span class="ev-card__date-month">SEP</span></div>
+            <span class="ev-card__tag">مؤتمر</span>
+            <div class="ev-card__content">
+              <h3 class="ev-card__title">المؤتمر الدولي الثاني لنصرة فلسطين</h3>
+              <div class="ev-card__meta">
+                <span class="ev-card__meta-item"><i class="fas fa-map-marker-alt"></i> الرباط، المغرب</span>
+                <span class="ev-card__meta-item"><i class="fas fa-users"></i> 2,100+ مشاركة</span>
+              </div>
+              <span class="ev-card__cta">عرض التفاصيل <i class="fas fa-arrow-left"></i></span>
             </div>
-            <div class="event-story__footer">
-              <span class="event-story__gallery-count"><i class="fas fa-images"></i> 150 <span data-i18n="event_photos">صورة</span></span>
-              <a href="event-detail.html" class="event-story__link"><span data-i18n="event_view">عرض التفاصيل</span> <i class="fas fa-arrow-left"></i></a>
-            </div>
-          </div>
+          </a>
         </div>
 
-        <div class="event-story" data-country="indonesia" data-year="2024" data-type="exhibition" data-aos="fade-up" data-aos-delay="200">
-          <div class="event-story__image">
-            <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=600&h=400&fit=crop" alt="">
-            <div class="event-story__date-badge"><span class="day">12</span><span class="month">JUN</span></div>
-            <span class="event-story__type" data-i18n="event_exhibition">معرض</span>
-          </div>
-          <div class="event-story__body">
-            <h3 class="event-story__title"><a href="event-detail.html">معرض فلسطين في قلوبنا - جاكرتا</a></h3>
-            <div class="event-story__meta">
-              <div class="event-story__meta-item"><i class="fas fa-map-marker-alt"></i><span>جاكرتا، إندونيسيا</span></div>
-              <div class="event-story__meta-item"><i class="fas fa-users"></i><span>1,500+ مشاركة</span></div>
+        <div class="ev-card" data-country="indonesia" data-year="2024" data-type="exhibition" data-aos="fade-up" data-aos-delay="200">
+          <a href="event-detail.html" class="ev-card__inner">
+            <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=700&h=500&fit=crop" alt="معرض فلسطين في قلوبنا">
+            <div class="ev-card__gradient"></div>
+            <div class="ev-card__date"><span class="ev-card__date-day">12</span><span class="ev-card__date-month">JUN</span></div>
+            <span class="ev-card__tag">معرض</span>
+            <div class="ev-card__content">
+              <h3 class="ev-card__title">معرض فلسطين في قلوبنا — جاكرتا</h3>
+              <div class="ev-card__meta">
+                <span class="ev-card__meta-item"><i class="fas fa-map-marker-alt"></i> جاكرتا، إندونيسيا</span>
+                <span class="ev-card__meta-item"><i class="fas fa-users"></i> 1,500+ مشاركة</span>
+              </div>
+              <span class="ev-card__cta">عرض التفاصيل <i class="fas fa-arrow-left"></i></span>
             </div>
-            <div class="event-story__footer">
-              <span class="event-story__gallery-count"><i class="fas fa-images"></i> 85 <span data-i18n="event_photos">صورة</span></span>
-              <a href="event-detail.html" class="event-story__link"><span data-i18n="event_view">عرض التفاصيل</span> <i class="fas fa-arrow-left"></i></a>
-            </div>
-          </div>
+          </a>
         </div>
 
       </div>
 
       <!-- No Events Message -->
-      <div class="no-events-message" style="display:none; text-align:center; padding:60px 20px;">
-        <i class="fas fa-search" style="font-size:3rem; color:var(--color-gray-300); margin-bottom:20px; display:block;"></i>
-        <p style="font-size:var(--text-lg); color:var(--color-gray-500);" data-i18n="no_events">لم يتم العثور على فعاليات مطابقة.</p>
+      <div class="no-events-message" data-i18n="no_events">
+        <i class="fas fa-search"></i>
+        <p>لم يتم العثور على فعاليات مطابقة.</p>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ════════ FOOTER ════════ -->
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <img src="images/logo2.png" alt="GWC" class="footer__logo">
-          <p class="footer__desc" data-i18n="footer_desc">منصة عالمية توحد النساء من أجل العدالة والسلام.</p>
-          <div class="footer__social">
-            <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="footer__social-link"><i class="fab fa-x-twitter"></i></a>
-            <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <img src="images/logo-white.png" alt="GWC" class="footer__logo">
+            <p class="footer__desc" data-i18n="footer_desc">منصة عالمية توحد النساء من أجل العدالة والسلام، توثق وتوصل الأصوات من أجل القدس وفلسطين.</p>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="footer__social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="footer__social-link" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading" data-i18n="footer_links">روابط سريعة</h4>
+            <div class="footer__links">
+              <a href="index.html" class="footer__link" data-i18n="nav_home">الرئيسية</a>
+              <a href="events.html" class="footer__link" data-i18n="nav_events">الفعاليات</a>
+              <a href="media.html" class="footer__link" data-i18n="nav_media">المركز الإعلامي</a>
+              <a href="about.html" class="footer__link" data-i18n="nav_about">عن الائتلاف</a>
+              <a href="contact.html" class="footer__link" data-i18n="nav_contact">تواصل معنا</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading" data-i18n="footer_resources">موارد</h4>
+            <div class="footer__links">
+              <a href="#" class="footer__link" data-i18n="footer_privacy">سياسة الخصوصية</a>
+              <a href="#" class="footer__link" data-i18n="footer_terms">شروط الاستخدام</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading" data-i18n="footer_newsletter">النشرة البريدية</h4>
+            <p class="footer__desc" data-i18n="footer_newsletter_desc">اشترك ليصلك آخر أخبار الفعاليات والمبادرات.</p>
+            <form class="footer__newsletter-form" onsubmit="event.preventDefault()">
+              <input type="email" class="footer__newsletter-input" placeholder="بريدك الإلكتروني">
+              <button type="submit" class="footer__newsletter-btn" data-i18n="footer_newsletter_btn">اشتراك</button>
+            </form>
           </div>
         </div>
-        <div>
-          <h4 class="footer__heading" data-i18n="footer_links">روابط سريعة</h4>
-          <div class="footer__links">
-            <a href="index.html" class="footer__link" data-i18n="nav_home">الرئيسية</a>
-            <a href="events.html" class="footer__link" data-i18n="nav_events">الفعاليات</a>
-            <a href="media.html" class="footer__link" data-i18n="nav_media">المركز الإعلامي</a>
-            <a href="about.html" class="footer__link" data-i18n="nav_about">عن الائتلاف</a>
-            <a href="contact.html" class="footer__link" data-i18n="nav_contact">تواصل معنا</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading" data-i18n="footer_resources">موارد</h4>
-          <div class="footer__links">
-            <a href="#" class="footer__link" data-i18n="footer_privacy">سياسة الخصوصية</a>
-            <a href="#" class="footer__link" data-i18n="footer_terms">شروط الاستخدام</a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__heading" data-i18n="footer_newsletter">النشرة البريدية</h4>
-          <p class="footer__desc" data-i18n="footer_newsletter_desc">اشترك ليصلك آخر أخبار الفعاليات.</p>
-          <form class="footer__newsletter-form" onsubmit="event.preventDefault()">
-            <input type="email" class="footer__newsletter-input" placeholder="بريدك الإلكتروني">
-            <button type="submit" class="footer__newsletter-btn" data-i18n="footer_newsletter_btn">اشتراك</button>
-          </form>
-        </div>
-      </div>
       </div>
       <div class="footer__bottom">
-        <p data-i18n="footer_rights">© 2026 ائتلاف المرأة العالمي. جميع الحقوق محفوظة.</p>
+        <p data-i18n="footer_rights">© 2026 ائتلاف المرأة العالمي لنصرة القدس وفلسطين. جميع الحقوق محفوظة.</p>
+        <div class="footer__bottom-links">
+          <a href="#" data-i18n="footer_privacy">سياسة الخصوصية</a>
+          <a href="#" data-i18n="footer_terms">شروط الاستخدام</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+  <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -252,7 +252,7 @@ function initGalleryTabs() {
 function initEventsFilter() {
   const filterSelects = document.querySelectorAll('.filter-select');
   const searchInput = document.querySelector('.filter-search__input');
-  const cards = document.querySelectorAll('.event-story[data-country][data-year][data-type],.event-card[data-country][data-year][data-type]');
+  const cards = document.querySelectorAll('.event-story[data-country][data-year][data-type],.event-card[data-country][data-year][data-type],.ev-card[data-country][data-year][data-type]');
   if (!cards.length) return;
 
   function filterEvents() {
