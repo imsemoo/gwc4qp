@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>المركز الإعلامي | ائتلاف المرأة العالمي</title>
+  <meta name="description" content="استكشف أرشيفنا الإعلامي الغني من أفلام وثائقية وريلز وصور من فعاليات الائتلاف حول العالم.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body class="font-ar">
 
-  <!-- HEADER -->
+  <!-- ════════ HEADER ════════ -->
   <header class="header" id="header">
     <div class="header__inner">
       <a href="index.html" class="header__logo"><img src="images/logo2.png" alt="GWC Logo"></a>
@@ -32,166 +35,387 @@
     </div>
   </header>
 
-  <!-- MEDIA HERO -->
-  <section class="page-hero">
-    <div class="container">
-      <h1 class="page-hero__title" data-i18n="media_page_title" data-aos="fade-up">المركز الإعلامي</h1>
-      <p class="page-hero__desc" data-i18n="media_page_desc" data-aos="fade-up" data-aos-delay="100">استكشف أرشيفنا الإعلامي الغني من صور وفيديوهات وريلز.</p>
+  <!-- ════════ FEATURED HERO MEDIA ════════ -->
+  <section class="media-hero">
+    <div class="media-hero__bg">
+      <img src="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=1920&h=1080&fit=crop&q=80" alt="">
     </div>
+    <div class="media-hero__overlay"></div>
+
+    <div class="container">
+      <div class="media-hero__content" data-aos="fade-up">
+        <div class="eyebrow" style="--gold-dark: var(--gold-light); color: var(--gold-light);">
+          <span data-i18n="media_page_title">المركز الإعلامي</span>
+        </div>
+        <h1 class="media-hero__title">الفيلم الوثائقي</h1>
+        <h2 class="media-hero__subtitle">المؤتمر الدولي الثالث لنصرة القدس وفلسطين</h2>
+        <div class="media-hero__meta">
+          <span class="media-hero__meta-item"><i class="fas fa-clock"></i> 12:45 دقيقة</span>
+          <span class="media-hero__meta-item"><i class="fas fa-eye"></i> 24,500 مشاهدة</span>
+          <span class="media-hero__meta-item"><i class="fas fa-calendar"></i> 15 مارس 2026</span>
+        </div>
+        <div class="media-hero__actions">
+          <button class="btn btn--gold btn--lg media-hero__play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <i class="fas fa-play"></i>
+            <span>شاهد الآن</span>
+          </button>
+          <a href="#videos" class="btn btn--outline-white">
+            <span>تصفح المزيد</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Large play circle overlay -->
+    <button class="media-hero__play-circle" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" aria-label="Play video" data-aos="zoom-in" data-aos-delay="200">
+      <div class="media-hero__play-ring"></div>
+      <i class="fas fa-play"></i>
+    </button>
   </section>
 
-  <!-- MEDIA CONTENT -->
-  <section class="section">
+  <!-- ════════ QUICK TABS NAV ════════ -->
+  <section class="media-nav-strip">
     <div class="container">
-      <!-- Tabs -->
-      <div class="media-tabs" data-aos="fade-up">
-        <button class="media-tab media-tab--active" data-filter="all">
-          <i class="fas fa-th-large"></i>
-          <span data-i18n="media_tab_all">الكل</span>
-        </button>
-        <button class="media-tab" data-filter="videos">
+      <div class="media-tabs">
+        <a href="#videos" class="media-tab media-tab--active">
           <i class="fas fa-video"></i>
           <span data-i18n="media_tab_videos">فيديوهات</span>
-        </button>
-        <button class="media-tab" data-filter="reels">
+        </a>
+        <a href="#reels" class="media-tab">
           <i class="fas fa-film"></i>
           <span data-i18n="media_tab_reels">ريلز</span>
-        </button>
-        <button class="media-tab" data-filter="photos">
+        </a>
+        <a href="#photos" class="media-tab">
           <i class="fas fa-camera"></i>
           <span data-i18n="media_tab_photos">صور</span>
-        </button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ VIDEOS — Featured + Grid ════════ -->
+  <section class="section" id="videos">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="eyebrow" data-i18n="media_tab_videos">فيديوهات</div>
+        <h2 class="section-heading">أحدث الفيديوهات</h2>
+        <p class="section-desc">شاهد أبرز اللحظات الموثقة من فعاليات الائتلاف حول العالم.</p>
       </div>
 
-      <!-- VIDEOS SECTION -->
-      <div data-media-section="videos" style="margin-bottom: var(--space-16);">
-        <h3 style="font-size: var(--text-2xl); font-weight: 700; margin-bottom: var(--space-8); display: flex; align-items: center; gap: var(--space-3);">
-          <i class="fas fa-video" style="color: var(--color-accent);"></i>
-          <span data-i18n="media_tab_videos">فيديوهات</span>
-        </h3>
-        <div class="video-grid">
-          <div class="video-card" data-aos="fade-up">
-            <div class="video-card__thumb" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
-              <img src="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=600&h=340&fit=crop" alt="">
-              <div class="video-card__play-btn"><i class="fas fa-play"></i></div>
-              <span class="video-card__duration">12:45</span>
-            </div>
-            <div class="video-card__body">
-              <h4 class="video-card__title">الفيلم الوثائقي - المؤتمر الدولي الثالث</h4>
-              <p class="video-card__info">15 مارس 2026 • 24,500 مشاهدة</p>
+      <!-- Featured video (large) + 2 secondary -->
+      <div class="media-featured-layout" data-aos="fade-up">
+        <!-- Main featured -->
+        <div class="vid-card vid-card--featured" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="vid-card__thumb">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&h=550&fit=crop" alt="">
+            <div class="vid-card__gradient"></div>
+            <div class="vid-card__play"><i class="fas fa-play"></i></div>
+            <span class="vid-card__badge">وثائقي</span>
+            <span class="vid-card__duration"><i class="fas fa-clock"></i> 08:30</span>
+          </div>
+          <div class="vid-card__info">
+            <h3 class="vid-card__title">كلمة رئيسة الائتلاف في مؤتمر إسطنبول</h3>
+            <div class="vid-card__meta">
+              <span><i class="fas fa-eye"></i> 18,200 مشاهدة</span>
+              <span><i class="fas fa-calendar"></i> 15 مارس 2026</span>
             </div>
           </div>
-          <div class="video-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="video-card__thumb" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
-              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=340&fit=crop" alt="">
-              <div class="video-card__play-btn"><i class="fas fa-play"></i></div>
-              <span class="video-card__duration">08:30</span>
-            </div>
-            <div class="video-card__body">
-              <h4 class="video-card__title">كلمة رئيسة الائتلاف في مؤتمر إسطنبول</h4>
-              <p class="video-card__info">15 مارس 2026 • 18,200 مشاهدة</p>
+        </div>
+
+        <!-- Secondary stack -->
+        <div class="vid-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="vid-card__thumb">
+            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=340&fit=crop" alt="">
+            <div class="vid-card__gradient"></div>
+            <div class="vid-card__play"><i class="fas fa-play"></i></div>
+            <span class="vid-card__badge">جولة</span>
+            <span class="vid-card__duration"><i class="fas fa-clock"></i> 15:20</span>
+          </div>
+          <div class="vid-card__info">
+            <h3 class="vid-card__title">معرض القدس في عيون النساء — جولة كاملة</h3>
+            <div class="vid-card__meta">
+              <span><i class="fas fa-eye"></i> 12,800 مشاهدة</span>
+              <span><i class="fas fa-calendar"></i> 22 يناير 2026</span>
             </div>
           </div>
-          <div class="video-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="video-card__thumb" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
-              <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=340&fit=crop" alt="">
-              <div class="video-card__play-btn"><i class="fas fa-play"></i></div>
-              <span class="video-card__duration">15:20</span>
-            </div>
-            <div class="video-card__body">
-              <h4 class="video-card__title">معرض القدس في عيون النساء - جولة كاملة</h4>
-              <p class="video-card__info">22 يناير 2026 • 12,800 مشاهدة</p>
+        </div>
+
+        <div class="vid-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="vid-card__thumb">
+            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&h=340&fit=crop" alt="">
+            <div class="vid-card__gradient"></div>
+            <div class="vid-card__play"><i class="fas fa-play"></i></div>
+            <span class="vid-card__badge">حوار</span>
+            <span class="vid-card__duration"><i class="fas fa-clock"></i> 22:15</span>
+          </div>
+          <div class="vid-card__info">
+            <h3 class="vid-card__title">حوار مع ناشطات من 12 دولة عن التضامن النسائي</h3>
+            <div class="vid-card__meta">
+              <span><i class="fas fa-eye"></i> 9,400 مشاهدة</span>
+              <span><i class="fas fa-calendar"></i> 10 ديسمبر 2025</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- REELS SECTION -->
-      <div data-media-section="reels" style="margin-bottom: var(--space-16);">
-        <h3 style="font-size: var(--text-2xl); font-weight: 700; margin-bottom: var(--space-8); display: flex; align-items: center; gap: var(--space-3);">
-          <i class="fas fa-film" style="color: var(--color-accent);"></i>
-          <span data-i18n="media_tab_reels">ريلز</span>
-        </h3>
-        <div class="reels-grid">
-          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" data-aos="fade-up">
-            <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=700&fit=crop" alt="">
-            <div class="reel-card__play"><i class="fas fa-play-circle"></i></div>
-            <div class="reel-card__overlay">
-              <span class="reel-card__title">لحظات مؤثرة من المؤتمر</span>
-              <span class="reel-card__views"><i class="fas fa-eye"></i> 45K</span>
-            </div>
+      <!-- More videos row -->
+      <div class="vid-more-row" data-aos="fade-up">
+        <div class="vid-card vid-card--compact" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="vid-card__thumb">
+            <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=500&h=300&fit=crop" alt="">
+            <div class="vid-card__gradient"></div>
+            <div class="vid-card__play"><i class="fas fa-play"></i></div>
+            <span class="vid-card__duration"><i class="fas fa-clock"></i> 05:40</span>
           </div>
-          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" data-aos="fade-up" data-aos-delay="50">
-            <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&h=700&fit=crop" alt="">
-            <div class="reel-card__play"><i class="fas fa-play-circle"></i></div>
-            <div class="reel-card__overlay">
-              <span class="reel-card__title">أصوات النساء من حول العالم</span>
-              <span class="reel-card__views"><i class="fas fa-eye"></i> 32K</span>
-            </div>
-          </div>
-          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" data-aos="fade-up" data-aos-delay="100">
-            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=700&fit=crop" alt="">
-            <div class="reel-card__play"><i class="fas fa-play-circle"></i></div>
-            <div class="reel-card__overlay">
-              <span class="reel-card__title">خلف الكواليس - التحضيرات</span>
-              <span class="reel-card__views"><i class="fas fa-eye"></i> 28K</span>
-            </div>
-          </div>
-          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" data-aos="fade-up" data-aos-delay="150">
-            <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&h=700&fit=crop" alt="">
-            <div class="reel-card__play"><i class="fas fa-play-circle"></i></div>
-            <div class="reel-card__overlay">
-              <span class="reel-card__title">رسائل تضامنية</span>
-              <span class="reel-card__views"><i class="fas fa-eye"></i> 21K</span>
-            </div>
-          </div>
-          <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" data-aos="fade-up" data-aos-delay="200">
-            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=700&fit=crop" alt="">
-            <div class="reel-card__play"><i class="fas fa-play-circle"></i></div>
-            <div class="reel-card__overlay">
-              <span class="reel-card__title">يوم القدس العالمي</span>
-              <span class="reel-card__views"><i class="fas fa-eye"></i> 55K</span>
-            </div>
+          <div class="vid-card__info">
+            <h3 class="vid-card__title">ملخص حملة التضامن العالمية</h3>
+            <div class="vid-card__meta"><span><i class="fas fa-eye"></i> 7,200</span></div>
           </div>
         </div>
-      </div>
-
-      <!-- PHOTOS SECTION -->
-      <div data-media-section="photos">
-        <h3 style="font-size: var(--text-2xl); font-weight: 700; margin-bottom: var(--space-8); display: flex; align-items: center; gap: var(--space-3);">
-          <i class="fas fa-camera" style="color: var(--color-accent);"></i>
-          <span data-i18n="media_tab_photos">صور</span>
-        </h3>
-        <div class="masonry-grid">
-          <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200" data-lightbox-group="media-photos" data-caption="المؤتمر الدولي"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop" alt=""><div class="masonry-item__overlay"><i class="fas fa-expand"></i></div></div>
-          <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200" data-lightbox-group="media-photos" data-caption="معرض فني"><img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&h=500&fit=crop" alt=""><div class="masonry-item__overlay"><i class="fas fa-expand"></i></div></div>
-          <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1200" data-lightbox-group="media-photos" data-caption="جلسات حوارية"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&h=350&fit=crop" alt=""><div class="masonry-item__overlay"><i class="fas fa-expand"></i></div></div>
-          <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200" data-lightbox-group="media-photos" data-caption="ورشة عمل"><img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=400&fit=crop" alt=""><div class="masonry-item__overlay"><i class="fas fa-expand"></i></div></div>
-          <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200" data-lightbox-group="media-photos" data-caption="التضامن"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=320&fit=crop" alt=""><div class="masonry-item__overlay"><i class="fas fa-expand"></i></div></div>
-          <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200" data-lightbox-group="media-photos" data-caption="حملة عالمية"><img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=450&fit=crop" alt=""><div class="masonry-item__overlay"><i class="fas fa-expand"></i></div></div>
-          <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1560439514-4e9645039924?w=1200" data-lightbox-group="media-photos" data-caption="معرض"><img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&h=380&fit=crop" alt=""><div class="masonry-item__overlay"><i class="fas fa-expand"></i></div></div>
-          <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=1200" data-lightbox-group="media-photos" data-caption="تصوير"><img src="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=400&h=300&fit=crop" alt=""><div class="masonry-item__overlay"><i class="fas fa-expand"></i></div></div>
+        <div class="vid-card vid-card--compact" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="vid-card__thumb">
+            <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=500&h=300&fit=crop" alt="">
+            <div class="vid-card__gradient"></div>
+            <div class="vid-card__play"><i class="fas fa-play"></i></div>
+            <span class="vid-card__duration"><i class="fas fa-clock"></i> 03:55</span>
+          </div>
+          <div class="vid-card__info">
+            <h3 class="vid-card__title">رسالة من نساء فلسطين</h3>
+            <div class="vid-card__meta"><span><i class="fas fa-eye"></i> 15,600</span></div>
+          </div>
+        </div>
+        <div class="vid-card vid-card--compact" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="vid-card__thumb">
+            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=500&h=300&fit=crop" alt="">
+            <div class="vid-card__gradient"></div>
+            <div class="vid-card__play"><i class="fas fa-play"></i></div>
+            <span class="vid-card__duration"><i class="fas fa-clock"></i> 11:10</span>
+          </div>
+          <div class="vid-card__info">
+            <h3 class="vid-card__title">جلسة ختامية — المؤتمر الثاني</h3>
+            <div class="vid-card__meta"><span><i class="fas fa-eye"></i> 6,800</span></div>
+          </div>
+        </div>
+        <div class="vid-card vid-card--compact" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <div class="vid-card__thumb">
+            <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=500&h=300&fit=crop" alt="">
+            <div class="vid-card__gradient"></div>
+            <div class="vid-card__play"><i class="fas fa-play"></i></div>
+            <span class="vid-card__duration"><i class="fas fa-clock"></i> 07:25</span>
+          </div>
+          <div class="vid-card__info">
+            <h3 class="vid-card__title">يوم القدس — فعاليات متنوعة</h3>
+            <div class="vid-card__meta"><span><i class="fas fa-eye"></i> 11,300</span></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ════════ REELS — Horizontal Social Experience ════════ -->
+  <section class="section media-reels-section" id="reels">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="eyebrow" data-i18n="media_tab_reels">ريلز</div>
+        <h2 class="section-heading">لحظات سريعة ومؤثرة</h2>
+        <p class="section-desc">مقاطع قصيرة توثق أبرز اللحظات من فعالياتنا ومبادراتنا العالمية.</p>
+      </div>
+    </div>
+
+    <!-- Full-bleed horizontal scroll — no container restriction -->
+    <div class="reels-carousel" data-aos="fade-up">
+      <div class="reels-carousel__track">
+        <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=700&fit=crop" alt="">
+          <div class="reel-card__gradient"></div>
+          <div class="reel-card__play"><i class="fas fa-play"></i></div>
+          <div class="reel-card__content">
+            <span class="reel-card__tag">مؤتمر</span>
+            <span class="reel-card__title">لحظات مؤثرة من المؤتمر</span>
+            <span class="reel-card__views"><i class="fas fa-play-circle"></i> 45K مشاهدة</span>
+          </div>
+        </div>
+
+        <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&h=700&fit=crop" alt="">
+          <div class="reel-card__gradient"></div>
+          <div class="reel-card__play"><i class="fas fa-play"></i></div>
+          <div class="reel-card__content">
+            <span class="reel-card__tag">تضامن</span>
+            <span class="reel-card__title">أصوات النساء من حول العالم</span>
+            <span class="reel-card__views"><i class="fas fa-play-circle"></i> 32K مشاهدة</span>
+          </div>
+        </div>
+
+        <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=700&fit=crop" alt="">
+          <div class="reel-card__gradient"></div>
+          <div class="reel-card__play"><i class="fas fa-play"></i></div>
+          <div class="reel-card__content">
+            <span class="reel-card__tag">كواليس</span>
+            <span class="reel-card__title">خلف الكواليس — التحضيرات</span>
+            <span class="reel-card__views"><i class="fas fa-play-circle"></i> 28K مشاهدة</span>
+          </div>
+        </div>
+
+        <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&h=700&fit=crop" alt="">
+          <div class="reel-card__gradient"></div>
+          <div class="reel-card__play"><i class="fas fa-play"></i></div>
+          <div class="reel-card__content">
+            <span class="reel-card__tag">رسائل</span>
+            <span class="reel-card__title">رسائل تضامنية من نساء العالم</span>
+            <span class="reel-card__views"><i class="fas fa-play-circle"></i> 21K مشاهدة</span>
+          </div>
+        </div>
+
+        <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=700&fit=crop" alt="">
+          <div class="reel-card__gradient"></div>
+          <div class="reel-card__play"><i class="fas fa-play"></i></div>
+          <div class="reel-card__content">
+            <span class="reel-card__tag">القدس</span>
+            <span class="reel-card__title">يوم القدس العالمي</span>
+            <span class="reel-card__views"><i class="fas fa-play-circle"></i> 55K مشاهدة</span>
+          </div>
+        </div>
+
+        <div class="reel-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <img src="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=400&h=700&fit=crop" alt="">
+          <div class="reel-card__gradient"></div>
+          <div class="reel-card__play"><i class="fas fa-play"></i></div>
+          <div class="reel-card__content">
+            <span class="reel-card__tag">معرض</span>
+            <span class="reel-card__title">جولة في المعرض الدولي</span>
+            <span class="reel-card__views"><i class="fas fa-play-circle"></i> 18K مشاهدة</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ PHOTOS — Gallery ════════ -->
+  <section class="section media-photos-section" id="photos">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="eyebrow" data-i18n="media_tab_photos">معرض الصور</div>
+        <h2 class="section-heading">توثيق بالصورة</h2>
+        <p class="section-desc">أرشيف مصور يوثق أبرز لحظات الفعاليات والمعارض والحملات حول العالم.</p>
+      </div>
+
+      <div class="masonry-grid" data-aos="fade-up">
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200" data-lightbox-group="media-photos" data-caption="المؤتمر الدولي الثالث — إسطنبول">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop" alt="">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200" data-lightbox-group="media-photos" data-caption="جلسات حوارية نسائية">
+          <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&h=500&fit=crop" alt="">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1200" data-lightbox-group="media-photos" data-caption="لحظات من المعرض">
+          <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&h=350&fit=crop" alt="">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200" data-lightbox-group="media-photos" data-caption="ورشة عمل تفاعلية">
+          <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=400&fit=crop" alt="">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200" data-lightbox-group="media-photos" data-caption="حملة التضامن العالمية">
+          <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=320&fit=crop" alt="">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200" data-lightbox-group="media-photos" data-caption="مسيرة نسائية عالمية">
+          <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=450&fit=crop" alt="">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1560439514-4e9645039924?w=1200" data-lightbox-group="media-photos" data-caption="معرض فني دولي">
+          <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?w=400&h=380&fit=crop" alt="">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="masonry-item" data-lightbox="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=1200" data-lightbox-group="media-photos" data-caption="توثيق إعلامي">
+          <img src="https://images.unsplash.com/photo-1597113366853-fea190b6cd82?w=400&h=300&fit=crop" alt="">
+          <div class="masonry-item__overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ CTA ════════ -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="section-header section-header--center" data-aos="zoom-in">
+        <h2 class="section-heading">شاركنا قصتك</h2>
+        <p class="section-desc">هل لديك صور أو فيديوهات من فعاليات الائتلاف؟ شاركنا لنوثق التاريخ معًا.</p>
+      </div>
+      <div class="cta-actions" data-aos="fade-up">
+        <a href="contact.html" class="btn btn--gold btn--lg">
+          <i class="fas fa-upload"></i>
+          <span>أرسل محتواك</span>
+        </a>
+        <a href="contact.html" class="btn btn--outline btn--lg">
+          <i class="fas fa-envelope"></i>
+          <span data-i18n="cta_btn_contact">تواصل معنا</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ FOOTER ════════ -->
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
         <div class="footer__grid">
-          <div class="footer__brand"><img src="images/logo2.png" alt="GWC" class="footer__logo"><p class="footer__desc" data-i18n="footer_desc">منصة عالمية توحد النساء.</p><div class="footer__social"><a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a><a href="#" class="footer__social-link"><i class="fab fa-x-twitter"></i></a><a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a><a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a></div></div>
-          <div><h4 class="footer__heading" data-i18n="footer_links">روابط سريعة</h4><div class="footer__links"><a href="index.html" class="footer__link" data-i18n="nav_home">الرئيسية</a><a href="events.html" class="footer__link" data-i18n="nav_events">الفعاليات</a><a href="media.html" class="footer__link" data-i18n="nav_media">المركز الإعلامي</a><a href="about.html" class="footer__link" data-i18n="nav_about">عن الائتلاف</a><a href="contact.html" class="footer__link" data-i18n="nav_contact">تواصل معنا</a></div></div>
-          <div><h4 class="footer__heading" data-i18n="footer_resources">موارد</h4><div class="footer__links"><a href="#" class="footer__link" data-i18n="footer_privacy">سياسة الخصوصية</a><a href="#" class="footer__link" data-i18n="footer_terms">شروط الاستخدام</a></div></div>
-          <div><h4 class="footer__heading" data-i18n="footer_newsletter">النشرة البريدية</h4><p class="footer__desc" data-i18n="footer_newsletter_desc">اشترك ليصلك آخر الأخبار.</p><form class="footer__newsletter-form" onsubmit="event.preventDefault()"><input type="email" class="footer__newsletter-input" placeholder="بريدك الإلكتروني"><button type="submit" class="footer__newsletter-btn" data-i18n="footer_newsletter_btn">اشتراك</button></form></div>
+          <div class="footer__brand">
+            <img src="images/logo2.png" alt="GWC" class="footer__logo">
+            <p class="footer__desc" data-i18n="footer_desc">منصة عالمية توحد النساء من أجل العدالة والسلام، توثق وتوصل الأصوات من أجل القدس وفلسطين.</p>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="footer__social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="footer__social-link" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading" data-i18n="footer_links">روابط سريعة</h4>
+            <div class="footer__links">
+              <a href="index.html" class="footer__link" data-i18n="nav_home">الرئيسية</a>
+              <a href="events.html" class="footer__link" data-i18n="nav_events">الفعاليات</a>
+              <a href="media.html" class="footer__link" data-i18n="nav_media">المركز الإعلامي</a>
+              <a href="about.html" class="footer__link" data-i18n="nav_about">عن الائتلاف</a>
+              <a href="contact.html" class="footer__link" data-i18n="nav_contact">تواصل معنا</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading" data-i18n="footer_resources">موارد</h4>
+            <div class="footer__links">
+              <a href="#" class="footer__link" data-i18n="footer_privacy">سياسة الخصوصية</a>
+              <a href="#" class="footer__link" data-i18n="footer_terms">شروط الاستخدام</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading" data-i18n="footer_newsletter">النشرة البريدية</h4>
+            <p class="footer__desc" data-i18n="footer_newsletter_desc">اشترك ليصلك آخر أخبار الفعاليات والمبادرات.</p>
+            <form class="footer__newsletter-form" onsubmit="event.preventDefault()">
+              <input type="email" class="footer__newsletter-input" placeholder="بريدك الإلكتروني">
+              <button type="submit" class="footer__newsletter-btn" data-i18n="footer_newsletter_btn">اشتراك</button>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="footer__bottom"><p data-i18n="footer_rights">© 2026 ائتلاف المرأة العالمي. جميع الحقوق محفوظة.</p></div>
+      <div class="footer__bottom">
+        <p data-i18n="footer_rights">© 2026 ائتلاف المرأة العالمي لنصرة القدس وفلسطين. جميع الحقوق محفوظة.</p>
+        <div class="footer__bottom-links">
+          <a href="#" data-i18n="footer_privacy">سياسة الخصوصية</a>
+          <a href="#" data-i18n="footer_terms">شروط الاستخدام</a>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+  <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
