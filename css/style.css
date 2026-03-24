@@ -4230,7 +4230,6 @@ p {
   backdrop-filter: blur(4px);
 }
 .reel-card__play i {
-  margin-inline-start: 2px;
   filter: drop-shadow(0 1px 4px rgba(0,0,0,.3));
 }
 .reel-card:hover .reel-card__play {
