@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>عن الائتلاف | ائتلاف المرأة العالمي</title>
+  <meta name="description" content="تعرف على ائتلاف المرأة العالمي لنصرة القدس وفلسطين — رؤيتنا ورسالتنا والنساء اللواتي يقدن التغيير حول العالم.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body class="font-ar">
 
- <!-- ════════ HEADER ════════ -->
+  <!-- ════════ HEADER ════════ -->
   <header class="header" id="header">
     <div class="header__inner">
       <a href="index.html" class="header__logo">
@@ -20,10 +24,10 @@
       <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
       <nav class="header__nav" id="headerNav">
         <ul class="nav__list">
-          <li><a href="index.html" class="nav__link " data-i18n="nav_home">الرئيسية</a></li>
+          <li><a href="index.html" class="nav__link" data-i18n="nav_home">الرئيسية</a></li>
           <li><a href="events.html" class="nav__link" data-i18n="nav_events">الفعاليات</a></li>
           <li><a href="media.html" class="nav__link" data-i18n="nav_media">المركز الإعلامي</a></li>
-          <li><a href="about.html" class="nav__link" data-i18n="nav_about">عن الائتلاف</a></li>
+          <li><a href="about.html" class="nav__link nav__link--active" data-i18n="nav_about">عن الائتلاف</a></li>
           <li><a href="contact.html" class="nav__link" data-i18n="nav_contact">تواصل معنا</a></li>
         </ul>
         <div class="lang-switcher">
@@ -35,23 +39,33 @@
     </div>
   </header>
 
-  <!-- ABOUT HERO -->
-  <section class="page-hero">
+  <!-- ════════ ABOUT HERO — Cinematic with image ════════ -->
+  <section class="about-hero">
+    <div class="about-hero__bg">
+      <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1920&h=900&fit=crop&q=80" alt="">
+    </div>
+    <div class="about-hero__overlay"></div>
     <div class="container">
-      <h1 class="page-hero__title" data-i18n="about_page_title" data-aos="fade-up">عن الائتلاف</h1>
-      <p class="page-hero__desc" data-i18n="about_page_desc" data-aos="fade-up" data-aos-delay="100">تعرف على رسالتنا ورؤيتنا والنساء اللواتي يقدن التغيير حول العالم.</p>
+      <div class="about-hero__content" data-aos="fade-up">
+        <div class="media-hero__eyebrow">
+          <span data-i18n="about_page_title">عن الائتلاف</span>
+        </div>
+        <h1 class="about-hero__title" data-i18n="about_hero_headline">نوحّد أصوات النساء<br>من أجل <em>القدس وفلسطين</em></h1>
+        <p class="about-hero__desc" data-i18n="about_page_desc">تعرف على رسالتنا ورؤيتنا والنساء اللواتي يقدن التغيير حول العالم.</p>
+      </div>
     </div>
   </section>
 
-  <!-- WHO WE ARE -->
+  <!-- ════════ WHO WE ARE ════════ -->
   <section class="section">
     <div class="container">
       <div class="about-content">
         <div class="about-content__text" data-aos="fade-right">
-          <h2 data-i18n="about_who">من نحن</h2>
+          <div class="eyebrow">من نحن</div>
+          <h2 data-i18n="about_who">ائتلاف المرأة العالمي</h2>
           <p data-i18n="about_who_text_1">ائتلاف المرأة العالمي لنصرة القدس وفلسطين هو تحالف دولي من منظمات وناشطات من جميع أنحاء العالم، متحدات في التزامهن بالمناصرة والتوثيق ورفع الوعي بقضية القدس وفلسطين.</p>
           <p data-i18n="about_who_text_2">من خلال المؤتمرات والمعارض والحملات والمبادرات الإعلامية، نعمل على تضخيم أصوات النساء وبناء تضامن دولي حقيقي.</p>
-          <a href="contact.html" class="btn btn--primary" style="margin-top: var(--space-4);">
+          <a href="contact.html" class="btn btn--dark about-content__btn">
             <i class="fas fa-handshake"></i>
             <span data-i18n="hero_btn_join">انضم إلينا</span>
           </a>
@@ -63,9 +77,13 @@
     </div>
   </section>
 
-  <!-- VISION & MISSION -->
-  <section class="section section--gray">
+  <!-- ════════ VISION & MISSION ════════ -->
+  <section class="section about-vm-section">
     <div class="container">
+      <div class="section-header section-header--center" data-aos="fade-up">
+        <div class="eyebrow">ما نؤمن به</div>
+        <h2 class="section-heading">رؤيتنا ورسالتنا</h2>
+      </div>
       <div class="vision-mission">
         <div class="vm-card vm-card--vision" data-aos="fade-up">
           <div class="vm-card__icon"><i class="fas fa-eye"></i></div>
@@ -81,9 +99,14 @@
     </div>
   </section>
 
-  <!-- IMPACT NUMBERS -->
-  <section class="section section--primary impact-section">
+  <!-- ════════ IMPACT NUMBERS ════════ -->
+  <section class="section impact-section">
     <div class="container">
+      <div class="section-header section-header--center" data-aos="fade-up">
+        <div class="eyebrow" data-i18n="impact_label">أثرنا</div>
+        <h2 class="section-heading" data-i18n="impact_title">نصنع الفرق</h2>
+        <p class="section-desc" data-i18n="impact_desc">جهودنا الجماعية تمتد عبر القارات لإحداث تغيير حقيقي.</p>
+      </div>
       <div class="impact-grid">
         <div class="impact-card" data-aos="fade-up">
           <div class="impact-card__icon"><i class="fas fa-calendar-check"></i></div>
@@ -109,56 +132,70 @@
     </div>
   </section>
 
-  <!-- PARTICIPATING COUNTRIES -->
-  <section class="section">
+  <!-- ════════ COUNTRIES ════════ -->
+  <section class="section about-countries-section">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="eyebrow" data-i18n="about_countries_title">الدول المشاركة</div>
-        <h2 class="section-heading" data-i18n="about_countries_title">الدول المشاركة</h2>
-        <p class="section-desc" data-i18n="about_countries_desc">يمتد ائتلافنا عبر القارات بمشاركة فاعلة من نساء في دول متنوعة.</p>
-      </div>
+      <div class="presence-layout">
+        <div data-aos="fade-right">
+          <div class="eyebrow" data-i18n="about_countries_title">حضور عالمي</div>
+          <h2 class="section-heading">ائتلاف يمتد عبر القارات</h2>
+          <p class="section-desc">يمتد ائتلافنا عبر القارات بمشاركة فاعلة من نساء في دول متنوعة.</p>
+          <div class="countries-grid">
+            <div class="country-chip"><span class="country-chip__flag fi fi-tr fis"></span><span class="country-chip__name">تركيا</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-my fis"></span><span class="country-chip__name">ماليزيا</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-gb fis"></span><span class="country-chip__name">المملكة المتحدة</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-jo fis"></span><span class="country-chip__name">الأردن</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-ma fis"></span><span class="country-chip__name">المغرب</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-id fis"></span><span class="country-chip__name">إندونيسيا</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-za fis"></span><span class="country-chip__name">جنوب أفريقيا</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-pk fis"></span><span class="country-chip__name">باكستان</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-tn fis"></span><span class="country-chip__name">تونس</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-dz fis"></span><span class="country-chip__name">الجزائر</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-iq fis"></span><span class="country-chip__name">العراق</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-kw fis"></span><span class="country-chip__name">الكويت</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-qa fis"></span><span class="country-chip__name">قطر</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-bh fis"></span><span class="country-chip__name">البحرين</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-lb fis"></span><span class="country-chip__name">لبنان</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-sd fis"></span><span class="country-chip__name">السودان</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-ly fis"></span><span class="country-chip__name">ليبيا</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-de fis"></span><span class="country-chip__name">ألمانيا</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-fr fis"></span><span class="country-chip__name">فرنسا</span></div>
+            <div class="country-chip"><span class="country-chip__flag fi fi-ng fis"></span><span class="country-chip__name">نيجيريا</span></div>
+          </div>
+        </div>
 
-      <div class="countries-grid" data-aos="fade-up">
-        <div class="country-card"><span class="country-card__flag">🇹🇷</span><span class="country-card__name">تركيا</span></div>
-        <div class="country-card"><span class="country-card__flag">🇲🇾</span><span class="country-card__name">ماليزيا</span></div>
-        <div class="country-card"><span class="country-card__flag">🇬🇧</span><span class="country-card__name">المملكة المتحدة</span></div>
-        <div class="country-card"><span class="country-card__flag">🇯🇴</span><span class="country-card__name">الأردن</span></div>
-        <div class="country-card"><span class="country-card__flag">🇲🇦</span><span class="country-card__name">المغرب</span></div>
-        <div class="country-card"><span class="country-card__flag">🇮🇩</span><span class="country-card__name">إندونيسيا</span></div>
-        <div class="country-card"><span class="country-card__flag">🇿🇦</span><span class="country-card__name">جنوب أفريقيا</span></div>
-        <div class="country-card"><span class="country-card__flag">🇵🇰</span><span class="country-card__name">باكستان</span></div>
-        <div class="country-card"><span class="country-card__flag">🇹🇳</span><span class="country-card__name">تونس</span></div>
-        <div class="country-card"><span class="country-card__flag">🇩🇿</span><span class="country-card__name">الجزائر</span></div>
-        <div class="country-card"><span class="country-card__flag">🇮🇶</span><span class="country-card__name">العراق</span></div>
-        <div class="country-card"><span class="country-card__flag">🇰🇼</span><span class="country-card__name">الكويت</span></div>
-        <div class="country-card"><span class="country-card__flag">🇶🇦</span><span class="country-card__name">قطر</span></div>
-        <div class="country-card"><span class="country-card__flag">🇧🇭</span><span class="country-card__name">البحرين</span></div>
-        <div class="country-card"><span class="country-card__flag">🇱🇧</span><span class="country-card__name">لبنان</span></div>
-        <div class="country-card"><span class="country-card__flag">🇸🇩</span><span class="country-card__name">السودان</span></div>
-        <div class="country-card"><span class="country-card__flag">🇱🇾</span><span class="country-card__name">ليبيا</span></div>
-        <div class="country-card"><span class="country-card__flag">🇩🇪</span><span class="country-card__name">ألمانيا</span></div>
-        <div class="country-card"><span class="country-card__flag">🇫🇷</span><span class="country-card__name">فرنسا</span></div>
-        <div class="country-card"><span class="country-card__flag">🇳🇬</span><span class="country-card__name">نيجيريا</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section section--sky cta-section">
-    <div class="cta-section__bg-pattern"></div>
-    <div class="container">
-      <div class="cta-section__content" data-aos="zoom-in">
-        <h2 class="cta-section__title" data-i18n="cta_title">كن جزءًا من التغيير</h2>
-        <p class="cta-section__desc" data-i18n="cta_desc">انضم إلى ائتلافنا العالمي وساهم في إيصال أصوات العدالة والسلام.</p>
-        <div class="cta-section__actions">
-          <a href="contact.html" class="btn btn--primary btn--lg"><i class="fas fa-hand-holding-heart"></i><span data-i18n="cta_btn_volunteer">انضم كمتطوع</span></a>
-          <a href="contact.html" class="btn btn--outline btn--lg"><i class="fas fa-envelope"></i><span data-i18n="cta_btn_contact">تواصل معنا</span></a>
+        <div class="presence-visual" data-aos="fade-left">
+          <div class="presence-visual__globe"><i class="fas fa-globe-americas"></i></div>
+          <div class="presence-visual__number">
+            <span data-counter="45" data-suffix="+">0</span>
+            <small data-i18n="hero_stat_countries">دولة</small>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
- <!-- ════════ FOOTER — Rich & Branded ════════ -->
+  <!-- ════════ CTA ════════ -->
+  <section class="section about-cta-section">
+    <div class="container">
+      <div class="section-header section-header--center" data-aos="zoom-in">
+        <h2 class="section-heading" data-i18n="cta_title">كن جزءًا من التغيير</h2>
+        <p class="section-desc" data-i18n="cta_desc">انضم إلى ائتلافنا العالمي وساهم في إيصال أصوات العدالة والسلام. معًا نستطيع إحداث أثر حقيقي.</p>
+      </div>
+      <div class="cta-actions" data-aos="fade-up">
+        <a href="contact.html" class="btn btn--gold btn--lg">
+          <i class="fas fa-hand-holding-heart"></i>
+          <span data-i18n="cta_btn_volunteer">انضم كمتطوع</span>
+        </a>
+        <a href="contact.html" class="btn btn--outline-white btn--lg">
+          <i class="fas fa-envelope"></i>
+          <span data-i18n="cta_btn_contact">تواصل معنا</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ FOOTER ════════ -->
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
@@ -174,7 +211,6 @@
               <a href="#" class="footer__social-link" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
             </div>
           </div>
-
           <div>
             <h4 class="footer__heading" data-i18n="footer_links">روابط سريعة</h4>
             <div class="footer__links">
@@ -185,7 +221,6 @@
               <a href="contact.html" class="footer__link" data-i18n="nav_contact">تواصل معنا</a>
             </div>
           </div>
-
           <div>
             <h4 class="footer__heading" data-i18n="footer_resources">موارد</h4>
             <div class="footer__links">
@@ -193,18 +228,16 @@
               <a href="#" class="footer__link" data-i18n="footer_terms">شروط الاستخدام</a>
             </div>
           </div>
-
           <div>
             <h4 class="footer__heading" data-i18n="footer_newsletter">النشرة البريدية</h4>
-            <p class="footer__desc" data-i18n="footer_newsletter_desc" style="margin-bottom:var(--sp-4);">اشترك ليصلك آخر أخبار الفعاليات والمبادرات.</p>
+            <p class="footer__desc" data-i18n="footer_newsletter_desc">اشترك ليصلك آخر أخبار الفعاليات والمبادرات.</p>
             <form class="footer__newsletter-form" onsubmit="event.preventDefault()">
-              <input type="email" class="footer__newsletter-input" data-i18n="footer_newsletter_placeholder" placeholder="بريدك الإلكتروني">
+              <input type="email" class="footer__newsletter-input" placeholder="بريدك الإلكتروني">
               <button type="submit" class="footer__newsletter-btn" data-i18n="footer_newsletter_btn">اشتراك</button>
             </form>
           </div>
         </div>
       </div>
-
       <div class="footer__bottom">
         <p data-i18n="footer_rights">© 2026 ائتلاف المرأة العالمي لنصرة القدس وفلسطين. جميع الحقوق محفوظة.</p>
         <div class="footer__bottom-links">
@@ -215,7 +248,7 @@
     </div>
   </footer>
 
-  <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+  <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
