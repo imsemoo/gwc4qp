@@ -389,10 +389,15 @@ function initReelsSwiper() {
   if (!reelsSwipers.length || typeof Swiper === 'undefined') return;
 
   reelsSwipers.forEach(el => {
-    new Swiper(el, {
+    // Find nav buttons relative to this swiper's parent
+    const parent = el.closest('[data-aos]') || el.parentElement;
+    const prevBtn = parent.querySelector('.reels-prev');
+    const nextBtn = parent.querySelector('.reels-next');
+
+    const config = {
       slidesPerView: 'auto',
       spaceBetween: 16,
-      freeMode: true,
+      freeMode: { enabled: true, sticky: false },
       grabCursor: true,
       speed: 500,
       breakpoints: {
@@ -400,7 +405,17 @@ function initReelsSwiper() {
         768:  { spaceBetween: 18 },
         1024: { spaceBetween: 20 },
       },
-    });
+    };
+
+    // Connect nav buttons if they exist
+    if (prevBtn && nextBtn) {
+      config.navigation = {
+        prevEl: prevBtn,
+        nextEl: nextBtn,
+      };
+    }
+
+    new Swiper(el, config);
   });
 }
 
